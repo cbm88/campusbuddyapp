@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_gpa_calculator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="mrustad.campusbuddy.gpaCalculator">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/gradeOne"
+        android:hint="Enter Grade"
+        android:enabled="true"
+        android:editable="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/gradeThree"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/gradeTwo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="Enter Grade"
+        android:editable="true"
+        android:enabled="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/gradeTwo"
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/gradeOne"
+        android:layout_alignRight="@+id/gradeOne"
+        android:layout_alignEnd="@+id/gradeOne"
+        android:hint="Enter Grade"
+        android:editable="true"
+        android:enabled="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/gradeOne"
+        android:layout_toEndOf="@+id/gradeOne"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:id="@+id/creditOne"
+        android:hint="Credit Hrs." />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/creditTwo"
+        android:layout_alignBaseline="@+id/gradeTwo"
+        android:layout_alignBottom="@+id/gradeTwo"
+        android:layout_alignLeft="@+id/creditOne"
+        android:layout_alignStart="@+id/creditOne"
+        android:hint="Credit Hrs." />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/creditThree"
+        android:layout_alignBaseline="@+id/gradeThree"
+        android:layout_alignBottom="@+id/gradeThree"
+        android:layout_alignLeft="@+id/creditTwo"
+        android:layout_alignStart="@+id/creditTwo"
+        android:hint="Credit Hrs." />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/creditFour"
+        android:layout_alignBaseline="@+id/gradeFour"
+        android:layout_alignBottom="@+id/gradeFour"
+        android:layout_alignLeft="@+id/creditThree"
+        android:layout_alignStart="@+id/creditThree"
+        android:hint="Credit Hrs." />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_alignTop="@+id/gradeFive"
+        android:layout_alignLeft="@+id/creditFour"
+        android:layout_alignStart="@+id/creditFour"
+        android:id="@+id/creditFive"
+        android:hint="Credit Hrs." />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_alignTop="@+id/gradeSix"
+        android:layout_alignLeft="@+id/creditFive"
+        android:layout_alignStart="@+id/creditFive"
+        android:id="@+id/creditSix"
+        android:hint="Credit Hrs."
+        android:text="0" />
+
+    <Button
+        android:text="GET GRADE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/calculateButton"
+        android:layout_below="@+id/creditSix"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@+id/creditSix"
+        android:layout_alignStart="@+id/creditSix"
+        android:backgroundTint="@android:color/holo_orange_light" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/resultField"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/calculateButton"
+        android:id="@+id/keySpinner"
+        android:layout_alignRight="@+id/gradeSix"
+        android:layout_alignEnd="@+id/gradeSix"
+        android:layout_alignTop="@+id/calculateButton"
+        android:entries="@array/choices"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/gradeFive"
+        android:hint="Enter Grade"
+        android:enabled="true"
+        android:editable="true"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/gradeFour"
+        android:hint="Enter Grade"
+        android:enabled="true"
+        android:editable="true"
+        android:layout_above="@+id/gradeFive"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="12dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/gradeSix"
+        android:hint="Enter Grade"
+        android:editable="true"
+        android:enabled="true"
+        android:layout_below="@+id/gradeFive"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp"
+        android:text="0" />
+
+</RelativeLayout>

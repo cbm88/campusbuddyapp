@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_class_schedule"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="mrustad.campusbuddy.MyDormRoom">
+
+
+    <CheckBox
+        android:text="Lighting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:id="@+id/lighting"
+        android:layout_below="@+id/textbooks"
+        android:layout_alignLeft="@+id/textbooks"
+        android:layout_alignStart="@+id/textbooks"
+        android:textAllCaps="true"
+        android:textSize="18dp"/>
+
+    <CheckBox
+        android:text="Kitchenware"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lighting"
+        android:layout_alignLeft="@+id/lighting"
+        android:layout_alignStart="@+id/lighting"
+        android:layout_marginTop="11dp"
+        android:id="@+id/kitchenware"
+        android:textAllCaps="true"
+        android:textSize="18dp"/>
+
+    <CheckBox
+        android:text="Writing Supplies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kitchenware"
+        android:layout_alignLeft="@+id/kitchenware"
+        android:layout_alignStart="@+id/kitchenware"
+        android:layout_marginTop="15dp"
+        android:id="@+id/writing"
+        android:textAllCaps="true"
+        android:textSize="18dp"/>
+
+    <CheckBox
+        android:text="Storage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/writing"
+        android:layout_alignLeft="@+id/writing"
+        android:layout_alignStart="@+id/writing"
+        android:layout_marginTop="16dp"
+        android:id="@+id/storage"
+        android:textAllCaps="true"
+        android:textSize="18dp"/>
+
+    <CheckBox
+        android:text="Laptop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/storage"
+        android:layout_alignLeft="@+id/storage"
+        android:layout_alignStart="@+id/storage"
+        android:layout_marginTop="16dp"
+        android:id="@+id/laptop"
+        android:textAllCaps="true"
+        android:textSize="18dp"/>
+
+    <CheckBox
+        android:text="Textbooks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:id="@+id/textbooks"
+        android:layout_below="@+id/bedding"
+        android:layout_alignLeft="@+id/bedding"
+        android:layout_alignStart="@+id/bedding"
+        android:textAllCaps="true"
+        android:textSize="18dp"/>
+
+    <CheckBox
+        android:text="Bedding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/bedding"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="true"
+        android:textSize="18dp"/>
+
+    <CheckBox
+        android:text="Printer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/laptop"
+        android:layout_alignLeft="@+id/laptop"
+        android:layout_alignStart="@+id/laptop"
+        android:layout_marginTop="18dp"
+        android:id="@+id/printer"
+        android:textAllCaps="true"
+        android:textSize="18dp"/>
+
+    <CheckBox
+        android:text="TV/Music/Games"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:id="@+id/entertainment"
+        android:layout_below="@+id/printer"
+        android:layout_alignLeft="@+id/printer"
+        android:layout_alignStart="@+id/printer"
+        android:textAllCaps="true"
+        android:textSize="18dp"/>
+</RelativeLayout>
